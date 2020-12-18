@@ -4,3 +4,4 @@
 3. Pay attention to different kinds of experients. It's better to put them in different files because annotation may mess up.
 4. Use state_dict routines to load models for different version training. Simple torch.load is not okay.
 5. When writing programs about gradients, try to think about corresponding computing graphs to ensure everything is under control.
+6. Make sure all the parameters are put into the optimizer. Pay attention to the case when modifying several layers between training.
