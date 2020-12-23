@@ -7,3 +7,4 @@
 6. Make sure all the parameters are put into the optimizer. Pay attention to the case when modifying several layers between training.
 7. Remember to use handle.remove() after implementing layer.register_forward_hook() to get intermediate features. Using copy.deepcopy() will retain register_forward_hook.
 8. Vector.register_hook() will be called once the vector appears. Pay attention to the special cases when it appears in different networks.
+9. Remember to register parameters when defining networks.
