@@ -8,3 +8,4 @@
 7. Remember to use handle.remove() after implementing layer.register_forward_hook() to get intermediate features. Using copy.deepcopy() will retain register_forward_hook.
 8. Vector.register_hook() will be called once the vector appears. Pay attention to the special cases when it appears in different networks.
 9. Remember to register parameters when defining networks. Use torch.nn.ModuleList rather than python list to register parameters.
+10. Always pay attention to deep copy and shallow copy. Contiguous(), copy.deepcopy() ... are functions to deal with it.
